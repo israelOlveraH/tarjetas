@@ -1,0 +1,17 @@
+ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+ul li {
+  text-align: center;
+  width: calc( 100% /3);
+}
+ul li a {
+  text-decoration: none;
+}

@@ -5,6 +5,7 @@ import {DetalleComponent} from "./detalle/detalle.component";
 import {HistorialComponent} from "./historial/historial.component";
 import {ReporteComponent} from "./reporte/reporte.component";
 import {DiarioComponent} from "./diario/diario.component";
+import {RegistroComponent} from "./registro/registro.component";
 
 const routes: Routes = [
   { path:"tarjetas", component:TarjetasComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path:"historial", component:HistorialComponent},
   { path:"diario", component:DiarioComponent },
   { path:"reporte", component:ReporteComponent},
+  { path:"registro", component:RegistroComponent},
   { path: '', redirectTo: 'tarjetas', pathMatch: 'full' },
   { path: '**', redirectTo: 'tarjetas', pathMatch: 'full' }
 ];

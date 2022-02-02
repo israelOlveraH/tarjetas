@@ -8,6 +8,9 @@ import { DetalleComponent } from './detalle/detalle.component';
 import { HistorialComponent } from './historial/historial.component';
 import { ReporteComponent } from './reporte/reporte.component';
 import { DiarioComponent } from './diario/diario.component';
+import { BarraComponent } from './barra/barra.component';
+import { RegistroComponent } from './registro/registro.component';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +19,9 @@ import { DiarioComponent } from './diario/diario.component';
     DetalleComponent,
     HistorialComponent,
     ReporteComponent,
-    DiarioComponent
+    DiarioComponent,
+    BarraComponent,
+    RegistroComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,9 @@
-
-ul{
-
+h2{
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+form{
   width: 200px;
   margin: 0 auto;
   padding: 0;

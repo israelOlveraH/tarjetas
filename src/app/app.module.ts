@@ -10,6 +10,7 @@ import { ReporteComponent } from './reporte/reporte.component';
 import { DiarioComponent } from './diario/diario.component';
 import { BarraComponent } from './barra/barra.component';
 import { RegistroComponent } from './registro/registro.component';
+import {FormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -23,10 +24,11 @@ import { RegistroComponent } from './registro/registro.component';
     BarraComponent,
     RegistroComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

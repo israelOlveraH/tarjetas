@@ -11,6 +11,8 @@ import { DiarioComponent } from './diario/diario.component';
 import { BarraComponent } from './barra/barra.component';
 import { RegistroComponent } from './registro/registro.component';
 import {FormsModule} from "@angular/forms";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatIconModule} from "@angular/material/icon";
 
 
 @NgModule({
@@ -27,7 +29,9 @@ import {FormsModule} from "@angular/forms";
     imports: [
         BrowserModule,
         AppRoutingModule,
-        FormsModule
+        FormsModule,
+        BrowserAnimationsModule,
+        MatIconModule
     ],
   providers: [],
   bootstrap: [AppComponent]

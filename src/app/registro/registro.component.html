@@ -1,12 +1,12 @@
 <h2>Registro de clientes </h2>
-<form>
-  <p>Nombre <input type="text" id="nombre" name="nombre"></p>
-  <p>A. Pereno <input type="text" id="apat" name="apat"></p>
-  <p>A. Materno <input type="text" id="amat" name="amat"></p>
-  <p>Direccion <input type="text" id="dir" name="dir"></p>
-  <p>Referencia <input type="text" id="ref" name="ref"></p>
-  <p>Articulo <input type="text" id="art" name="art"></p>
-  <p>Precio <input type="number" id="pre" name="pre"></p>
-  <p>No de Cliente<input type="number" id="cli" name="cli"></p>
-  <p> <input type="button" value="Registro"></p>
+<form [formGroup]="formulario" (ngSubmit)="registroFormulario()">
+  <p>Nombre <input type="text" formControlName="nombre" name="nombre"></p>
+  <p>A. Pereno <input type="text" formControlName="apat" name="apat"></p>
+  <p>A. Materno <input type="text" formControlName="amat" name="amat"></p>
+  <p>Direccion <input type="text" formControlName="dir" name="dir"></p>
+  <p>Referencia <input type="text" formControlName="ref" name="ref"></p>
+  <p>Articulo <input type="text" formControlName="art" name="art"></p>
+  <p>Precio <input type="number" formControlName="pre" name="pre"></p>
+  <p>No de Cliente<input type="number" formControlName="cli" name="cli"></p>
+  <p> <input type="submit" value="Registro"></p>
 </form>

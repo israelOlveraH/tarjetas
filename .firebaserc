@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "tar1-724de": {
+      "hosting": {
+        "tarjetas": [
+          "tar1-724de"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "tar1-724de"
+  }
+}

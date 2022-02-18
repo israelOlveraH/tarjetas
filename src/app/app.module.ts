@@ -10,9 +10,16 @@ import { ReporteComponent } from './reporte/reporte.component';
 import { DiarioComponent } from './diario/diario.component';
 import { BarraComponent } from './barra/barra.component';
 import { RegistroComponent } from './registro/registro.component';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from "@angular/material/icon";
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import {AngularFireModule} from "@angular/fire/compat";
+import {AngularFireDatabaseModule} from "@angular/fire/compat/database";
 
 
 @NgModule({
@@ -31,7 +38,11 @@ import {MatIconModule} from "@angular/material/icon";
         AppRoutingModule,
         FormsModule,
         BrowserAnimationsModule,
-        MatIconModule
+        MatIconModule,
+      AngularFireModule.initializeApp(environment.firebase),
+      AngularFireDatabaseModule,
+      FormsModule,
+      ReactiveFormsModule
     ],
   providers: [],
   bootstrap: [AppComponent]
